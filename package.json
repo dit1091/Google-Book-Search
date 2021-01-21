@@ -1,6 +1,9 @@
 {
   "name": "google-books",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.15.4"
+  },
   "description": "React app that allows you to use Google Books to search for and save books",
   "main": "server.js",
   "scripts": {
