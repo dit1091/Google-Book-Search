@@ -13,7 +13,8 @@ Users can search for books via the Google Books API and render them here. Users 
 
 ## Installation 
  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
- `npm install`\
+ \
+ `npm install`
 
 ## User Story
 `AS AN avid traveller`
