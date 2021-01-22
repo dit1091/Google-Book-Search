@@ -19,11 +19,11 @@
   "author": "Dannette Tejeda",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^4.1.2",
+    "concurrently": "^5.3.0",
     "nodemon": "^1.19.4"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-jest": "^24.9.0",
     "bootstrap": "^4.6.0",
     "cors": "^2.8.5",
@@ -38,10 +38,11 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
+    "react-native-google-books": "^1.0.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
     "serve": "^11.3.2",
     "webpack": "^4.42.0",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.2"
   }
 }
