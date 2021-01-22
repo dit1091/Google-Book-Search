@@ -1,7 +1,8 @@
 # Google-Book-Search
 
-This appllication can be used to track one's budget. It has functionality to allow for offline access. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they will be able to populate the total when brought back online.
-Offline Functionality:
+This application can be used to Google search and view books. The App includes React components, works with helper/util functions, and utilizes React lifecycle methods to query and display books based on user searches. It also uses Node, Express and MongoDB so that users can save books to review or purchase later.
+
+Users can search for books via the Google Books API and render them here. Users have the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo database. In addition, the app renders all books saved to the Mongo database. The user also has an option to "Delete" a book, removing it from the Mongo database.
 
 ## Table of Contents 
 * [Installation](#installation) 
@@ -11,15 +12,16 @@ Offline Functionality:
 
 
 ## Installation 
- `npm install`\
- `mongodb`
+ This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ \
+ `npm install`
 
 ## User Story
-`AS AN avid traveller`
+`AS a book reader`
 \
-`I WANT to be able to track my withdrawals and deposits with or without a data/internet connection`
+`I WANT to be able to search books via Google and save them`
 \
-`SO THAT my account balance is accurate when I am traveling.`
+`SO THAT I can have a database of my favorite books and books I want to read.`
 
 ## Usage 
  `node server.js`
@@ -27,7 +29,7 @@ Offline Functionality:
  [localhost:3000/](https://http://localhost:3000/)
  
  ## Heroku
- https://sleepy-sierra-43293.herokuapp.com/
+https://shrouded-savannah-92398.herokuapp.com/
 
 
 ## Questions 
