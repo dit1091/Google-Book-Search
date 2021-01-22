@@ -17,11 +17,11 @@ Users can search for books via the Google Books API and render them here. Users 
  `npm install`
 
 ## User Story
-`AS AN avid traveller`
+`AS a book reader`
 \
-`I WANT to be able to track my withdrawals and deposits with or without a data/internet connection`
+`I WANT to be able to search books via Google and save them`
 \
-`SO THAT my account balance is accurate when I am traveling.`
+`SO THAT I can have a database of my favorite books and books I want to read.`
 
 ## Usage 
  `node server.js`
