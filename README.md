@@ -24,7 +24,7 @@ Users can search for books via the Google Books API and render them here. Users 
 `SO THAT I can have a database of my favorite books and books I want to read.`
 
 ## Usage 
- `node server.js`
+ `npm start`
  \
  [localhost:3000/](https://http://localhost:3000/)
  
