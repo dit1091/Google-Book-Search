@@ -1,6 +1,7 @@
 {
   "name": "google-books",
   "version": "1.0.0",
+  "private": "true",
   "engines": {
     "node": "14.15.4"
   },
