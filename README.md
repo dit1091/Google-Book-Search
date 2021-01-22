@@ -1,7 +1,8 @@
 # Google-Book-Search
 
-This appllication can be used to track one's budget. It has functionality to allow for offline access. The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they will be able to populate the total when brought back online.
-Offline Functionality:
+This application can be used to Google search and view books. The App includes React components, works with helper/util functions, and utilizes React lifecycle methods to query and display books based on user searches. It also uses Node, Express and MongoDB so that users can save books to review or purchase later.
+
+Users can search for books via the Google Books API and render them here. Users have the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo database. In addition, the app renders all books saved to the Mongo database. The user also has an option to "Delete" a book, removing it from the Mongo database.
 
 ## Table of Contents 
 * [Installation](#installation) 
@@ -11,8 +12,8 @@ Offline Functionality:
 
 
 ## Installation 
+ This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
  `npm install`\
- `mongodb`
 
 ## User Story
 `AS AN avid traveller`
