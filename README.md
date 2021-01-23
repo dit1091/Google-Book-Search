@@ -19,7 +19,7 @@ Users can search for books via the Google Books API and render them here. Users 
 ## User Story
 `AS a book reader`
 \
-`I WANT to be able to search books via Google and save them`
+`I WANT to be able to search books via the Google search engine and save them`
 \
 `SO THAT I can have a database of my favorite books and books I want to read.`
 
