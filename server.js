@@ -1,12 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-
-const PORT = process.env.PORT || 3001;
 const routes = require("./routes");
-const app = express();
+const app = express()
+const PORT = process.env.PORT || 3000;
 
-// Define middleware here
+// Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -20,13 +19,12 @@ app.use(routes);
 // require("./routes/api/books.js")(app);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
-
-// Send every other request to the React app
-// Define any API routes before this runs
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://dit1091:Ruby2021@cluster0.bxcpm.mongodb.net/googlebooks?retryWrites=true&w=majority",
+{
+  useCreateIndex: true,
+  useNewUrlParser: true
+  }
+);
 
 console.log("PID: " + process.pid);
 
