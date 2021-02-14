@@ -1,34 +1,23 @@
-
-import React, { useState } from 'react';
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Search from "./pages/Search";
+import Home from "./pages/Home";
 import Saved from "./pages/Saved";
-import NavBar from "./components/NavBar";
+import NoMatch from "./pages/NoMatch";
+import Nav from "./components/Nav";
 
 function App() {
-  const pathArray = window.location.pathname.split("/");
-  let basePath = "";
-
-  if (pathArray.length > 0) {
-    pathArray.pop();
-    basePath = pathArray.join("/");
-  };
-
-  const [pathState] = useState(basePath);
-
   return (
-    <Router basename={pathState}>
-      <>
-        <NavBar />
+    <Router>
+      <div>
+        <Nav />
         <Switch>
-          <Route exact path="/Search"><Search /></Route>
-          <Route exact path="/Saved"><Saved /></Route>
-          <Route path="/*"><Search /></Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/saved" component={Saved} />
+          <Route component={NoMatch} />
         </Switch>
-      </>
+      </div>
     </Router>
   );
-};
+}
 
 export default App;
